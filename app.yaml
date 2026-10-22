@@ -1,0 +1,11 @@
+name: TelegramFireBot
+description: Fire and Smoke Detection with Telegram Alert
+ports:
+- 8080
+bricks:
+- arduino:video_object_detection:
+    variables:
+      EI_OBJ_DETECTION_MODEL: /home/arduino/.arduino-bricks/ei-models/wildfire-dt-model.eim
+      EI_V_OBJ_DETECTION_MODEL: /home/arduino/.arduino-bricks/ei-models/wildfire-dt-model.eim
+- arduino:web_ui: {}
+icon: 🔥
